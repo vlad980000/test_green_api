@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GREEN-API Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <h1>Тест GREEN-API</h1>
+
+    <div class="layout">
+      <div class="left-col">
+        <div class="box">
+          <input class="auth-field" id="idInstance" type="text" placeholder="idInstance">
+
+          <input class="auth-field" id="apiTokenInstance" type="password" placeholder="ApiTokenInstance">
+        </div>
+
+        <div class="grid">
+        <div class="box section">
+          <button id="btnGetSettings">getSettings</button>
+          <button id="btnGetState">getStateInstance</button>
+        </div>
+
+        <div class="box section">
+          <input id="chatId" type="text" placeholder="79991234567">
+
+          <textarea class="message-field" id="message" rows="4" placeholder="Hello world"></textarea>
+
+          <button id="btnSendMessage">sendMessage</button>
+        </div>
+
+        <div class="box section">
+          <input id="chatIdFile" type="text" placeholder="79991234567">
+          <input class="message-field" id="fileUrl" type="url" placeholder="https://example.com/file.pdf">
+
+          <button id="btnSendFile">sendFileByUrl</button>
+        </div>
+      </div>
+      </div>
+
+      <div class="box right-col">
+        <label for="result">Ответ API</label>
+        <textarea id="result" readonly></textarea>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
